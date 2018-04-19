@@ -9,12 +9,12 @@
 <meta NAME="Language" CONTENT="pl">
 <meta name="owner" content="sklep">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="src/styles.css" rel="stylesheet" type="text/css">
+<link href="styles.css" rel="stylesheet" type="text/css">
 
 </head>
 <body>
 
-<div style="text-align: center; margin-left: auto; margin-right: auto"><img src="img/applogo.jpg" alt="logo" style="display: block; margin-left: auto; margin-right: auto"></img>
+<div style="text-align: center; margin-left: auto; margin-right: auto"><img src="../img/applogo.jpg" alt="logo" style="display: block; margin-left: auto; margin-right: auto; max-width: 200px;"></img>
 
 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Logowanie</button> </div>
 
@@ -23,7 +23,7 @@
   <form class="modal-content animate" action="/action_page.php">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="img/applogo.jpg" alt="logo" class="avatar" style="width: 200px; height: 200px">
+      <img src="../img/applogo.jpg" alt="logo" class="avatar" style="width: 200px; height: 200px">
     </div>
 
     <div class="container">
@@ -34,9 +34,7 @@
       <input type="password" placeholder="haslo" name="psw" required>
         
       <button type="submit">Zaloguj</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Zapamietaj
-      </label>
+     
     </div>
 
     <div class="container" style="background-color:#f1f1f1">

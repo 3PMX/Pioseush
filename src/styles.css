@@ -1,5 +1,9 @@
 
-body {font-family: Arial, Helvetica, sans-serif;}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+background: url(../img/tlobody.jpg);
+
+}
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
@@ -118,4 +122,61 @@ span.psw {
     .cancelbtn {
        width: 100%;
     }
+}
+
+
+.sidenav {
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 120px;
+    left: 10px;
+    background: #4CAF50;
+    overflow-x: hidden;
+    padding: 8px 0;
+    text-decoration: none;
+
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    display: block;
+
+}
+
+.sidenav a:hover {
+    color: #c0c0c0;
+    background-color: rgba(35, 145, 35, 0.678);
+}
+
+.main {
+    margin-left: 170px; /* Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+.header {
+    height: 120px;
+}
+
+.header button {
+    width: 90px;
+    position:relative;
+    z-index: 1;
+    top: 20px;
+    right: 10px;
+    background: #4CAF50;
+
+    padding: 8px 0;
+font-size: 20px;
+text-decoration: none;
+
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
