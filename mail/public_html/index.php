@@ -97,10 +97,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	<span>Tutaj wpisz treść wiadomości:</span>
 	<textarea type="text" name="mail_body" class="wiadomosc"></textarea>
 	</label>
-	<br>
-	<label>
-	<input type="file" name="plik" accept="image/jpeg,application/pdf,application/msword">
-	</label>
 	<br><br>
 	<input type="checkbox" name="checkbox" class="regulamin"></input>
 	<div class="regulamin_text"><p>Wyrażam zgodę na przetwarzanie danych osobowych zgodnie z ustawą o ochronie danych osobowych w związku z (np. wysyłaniem zapytania przez formularz kontaktowy). Podanie danych jest dobrowolne, ale niezbędne do przetworzenia zapytania. Zostałem poinformowany, że przysługuje mi prawo dostępu do swoich danych, możliwości ich poprawiania, żądania zaprzestania i ich przetwarzania. Administraotem danych osobowych jest Pioseush - Monitoring zamówień (grupa projektowa, Politechnika Opolska).
