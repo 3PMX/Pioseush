@@ -129,9 +129,32 @@ span.psw {
 }
 
 
+p {
 
+text-align: center;
+color: #333333;
+}
+
+hr{
+    width: 50%;
+    background-color: #333333;
+}
+
+a{
+    text-decoration: none;
+    color: #333333;
+    font-weight: 700;
+}
 
 .main {
+    margin-left: 10%;
+    margin-right: 10%; /* Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+.contact{
+    text-align: center;
     margin-left: 10%;
     margin-right: 10%; /* Same width as the sidebar + left position in px */
     font-size: 28px; /* Increased text to enable scrolling */
@@ -227,8 +250,8 @@ text-decoration: none;
     top: 20px;
     left: 10px;
     padding: 8px 0;
-font-size: 20px;
-text-decoration: none;
+    font-size: 20px;
+    text-decoration: none;
 
 }
 
@@ -239,5 +262,78 @@ text-decoration: none;
 }
 
 
+/* Formularz kontaktowy */
+        div.box .wiadomosc {
+            padding:10px 10px;
+            width:1470px;
+            border-bottom: 1px double #C0C0C0;
+            border-top: 1px double #C0C0C0;
+            border-left:1px double #C0C0C0;
+            border-right:1px double #C0C0C0;
+            overflow:hidden;
+            height:200px;
+        }
 
+        div.box .wpis {
+            padding:10px 10px;
+            width:1490px;
+            border-bottom: 1px double #C0C0C0;
+            border-top: 1px double #C0C0C0;
+            border-left:1px double #C0C0C0;
+            border-right:1px double #C0C0C0;
+        }
 
+        div.box .button {
+            margin:0 0 50px 0;
+            padding:4px 7px;
+            background:#4CAF50;
+            border:0px;
+            position: relative;
+            top:10px;
+            left:0;
+            width:200px;
+            height: 80px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        div.box label span {
+            display: block;
+            color:#333333;
+            font-size:15px;
+            width:200px;
+            text-align:left;
+            padding:5px 20px 0 0;
+        }
+
+         div.box h1 { 
+            color:#4CAF50;
+            font-size:50px;
+            text-transform:uppercase;
+            padding:10px 0 10px 10px;
+            text-align: center;
+        }
+
+      div.box p
+        {
+            text-align: left;
+            font-size: 12px;
+            float: left;
+        }
+        .regulamin
+        {
+            margin-bottom: 50px;
+            width: 2%;
+            float:left;
+            font-size: 12px;
+        }
+        .regulamin_text
+        {
+            margin-top: 0px;
+            width: 50%;
+            float: left;
+            font-size: 12px;
+            
+        }
+
+/* Forumarz kontaktowy - KONIEC */
