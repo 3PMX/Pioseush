@@ -4,6 +4,8 @@
 <section class="mainkontener">
 
 
+                    <p> Witaj w panelu klienta. Zapraszamy! </p>
+
 </section>
 
 <?php

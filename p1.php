@@ -36,11 +36,11 @@ echo 'jakiś error';
 <div class="sidenav" id="sidebar">
 
 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-<a href="#menu"> Menu: </a>
-<a href="sth.php"> dokumenty </a>
-  <a href="clientorders.php">zamowienia</a>
-  <a href="konto.php">konto</a>
-  <a href="kontakt.php">kontakt</a>
+    <a href="#menu"> Menu: </a>
+  <a href="orders.php">zamowienia</a>
+  <a href="statusy.php">statusy</a>
+  <a href="about.php">o firmie</a>
+  <a href="konto.php">moje dane</a>
 </div>
 <button type="submit" name="submit" style="width: 90px; float: left;" onclick="openNav()">Menu</button>
 
@@ -55,10 +55,4 @@ function closeNav() {
     document.getElementById("sidebar").style.width = "0";
 }
 </script>
-
-<div class="main">
-
-
-
-</div>
 </header>

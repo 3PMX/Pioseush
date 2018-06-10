@@ -18,17 +18,17 @@ session_start();
 </head>
 <body>
 <header>
+<div style="text-align: center; margin-left: auto; margin-right: auto"><img src="img/applogo.jpg" alt="logo" style="display: block; margin-left: auto; margin-right: auto; max-width: 200px;"></img>
 
-<div style="text-align: center; margin-left: auto; margin-right: auto"><img src="img/logo2.png" alt="logo" style="display: block; margin-top: 150px; margin-left: auto; margin-right: auto; max-width: auto;"></img>
+
 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Logowanie</button> </div>
-</div>
 
 <div id="id01" class="modal">
 
   <form class="modal-content animate" action="includes/login.inc.php" method="POST">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="img/logo.jpg" alt="logo" class="logo" style="width: 215px; height: 148px">
+      <img src="img/applogo.jpg" alt="logo" class="avatar" style="width: 200px; height: 200px">
     </div>
 
     <div class="container">

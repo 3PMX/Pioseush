@@ -14,30 +14,30 @@ $conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName);
 
 
 
-$sql = "SELECT id_konto, imie, nazwisko, login, e_mail, telefon FROM users";
+$sql = "SELECT id, id_konta, numer_zamowienia, wartosc, data_zlozenia, data_realizacji FROM zamowienie";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
-    echo "<h1> TABELA UZYTKOWNIKOW </h1>";
+    echo "<h1> TABELA REALIZOWANYCH ZAMOWIEN </h1>";
     echo "<table cellpadding=\"2\" border=1>";
     echo "<tr>";
-    echo "<td> ID KONTO </td>";
-    echo "<td> IMIE </td>";
-    echo "<td> NAZWISKO </td>";
-    echo "<td> LOGIN </td>";
-    echo "<td> MAIL </td>";
-    echo "<td> TELEFON </td>";
+    echo "<td> ID </td>";
+    echo "<td> ID_konta </td>";
+    echo "<td> NR_zam </td>";
+    echo "<td> WARTOSC </td>";
+    echo "<td> DATA_ZLOZ </td>";
+    echo "<td> DATA_REALIZACJI </td>";
     echo "</tr>";
     while($row = $result->fetch_assoc()) {
 
         echo "<tr>";
-        echo "<td>".$row['id_konto']."</td>";
-        echo "<td>".$row['imie']."</td>";
-        echo "<td>".$row['nazwisko']."</td>";
-        echo "<td>".$row['login']."</td>";
-        echo "<td>".$row['e_mail']."</td>";
-        echo "<td>".$row['telefon']."</td>";
+        echo "<td>".$row['id']."</td>";
+        echo "<td>".$row['id_konta']."</td>";
+        echo "<td>".$row['numer_zamowienia']."</td>";
+        echo "<td>".$row['wartosc']."</td>";
+        echo "<td>".$row['data_zlozenia']."</td>";
+        echo "<td>".$row['data_realizacji']."</td>";
         echo "</tr>";
     } 
     echo "</table>";

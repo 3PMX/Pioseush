@@ -1,5 +1,5 @@
 <?php
-    include_once 'header.php';
+    include_once 'paneladmina.php';
 ?>
 
     <form id="ktk" class="signup-form" action="../includes/signup.inc.php" method="POST">
@@ -15,5 +15,9 @@
 </form>
 
 
+<?php
 
+include_once 'footer.php';
+
+?>
 
