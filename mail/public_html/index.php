@@ -21,9 +21,15 @@ function send_mail($config)
 	$mail->SMTPAuth = true;                               // Enable SMTP authentication
 	$mail->Username = 'biuro.3pmx@int.pl';                 // SMTP username
 	$mail->Password = 'P@ssw0rd';                           // SMTP password
-	$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-	$mail->Port = 25;                                    // TCP port to connect to
-
+	$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
+	$mail->Port = 465;                                    // TCP port to connect to
+	$mail->SMTPOptions = array(
+	'ssl' => array(
+	'verify_peer' => false,
+	'verify_peer_name' => false,
+	'allow_self_signed' => true
+	)
+	);
 	$mail->setFrom('biuro.3pmx@int.pl', '3PMX');
 	$mail->addAddress('biuro.3pmx@int.pl', '3PMX');     // Add a recipient
 	// $mail->addAddress('ellen@example.com');               // Name is optional
